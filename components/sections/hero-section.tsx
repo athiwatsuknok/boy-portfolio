@@ -2,6 +2,7 @@ import { AnimatedText } from "@/components/ui/animated-text";
 import { Button } from "@/components/ui/button";
 import { Spotlight } from "@/components/ui/spotlight";
 import { TextGenerateEffect } from "../ui/text-generate-effect";
+import Link from "next/link";
 
 export function HeroSection() {
   return (
@@ -35,12 +36,15 @@ export function HeroSection() {
             <Button className="bg-purple-600 hover:bg-purple-700 text-white text-lg px-8 py-6 rounded-full border-none">
               View My Work
             </Button>
-            <Button
-              variant="outline"
-              className="border-white text-black hover:bg-white/10 hover:text-white text-lg px-8 py-6 rounded-full"
-            >
-              Contact Me
-            </Button>
+            <Link href="#contact">
+              {" "}
+              <Button
+                variant="outline"
+                className="border-white text-black hover:bg-white/10 hover:text-white text-lg px-8 py-6 rounded-full"
+              >
+                Contact Us
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

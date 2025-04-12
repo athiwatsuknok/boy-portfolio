@@ -34,7 +34,6 @@ export function Navbar({ scrolled }: NavbarProps) {
     { name: "Skills", href: "skills" },
     { name: "Experience", href: "experience" },
     { name: "Projects", href: "projects" },
-    { name: "Contact", href: "contact" },
   ];
 
   if (!mounted) return null;
@@ -82,7 +81,7 @@ export function Navbar({ scrolled }: NavbarProps) {
               className="bg-purple-600 hover:bg-purple-700 text-white"
               onClick={() => scrollToSection("contact")}
             >
-              Get In Touch
+              Contact
             </Button>
           </nav>
 
@@ -121,7 +120,7 @@ export function Navbar({ scrolled }: NavbarProps) {
             className="bg-purple-600 hover:bg-purple-700 text-white mt-4 px-8 py-6 text-lg"
             onClick={() => scrollToSection("contact")}
           >
-            Get In Touch
+            Contact
           </Button>
         </nav>
       </div>
